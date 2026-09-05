@@ -1,0 +1,29 @@
+# Build output
+/build/
+/dist/
+/tmp/
+*.exe
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.log
+
+# Local packages (downloaded via packages/fetch-packages.ps1)
+/packages/*.exe
+/packages/*.msi
+/packages/*.zip
+/packages/*.7z
+/packages/*.tgz
+/packages/*.tar.gz
+
+# Editor / IDE
+.vs/
+.vscode/
+.idea/
+*.user
+
+# Misc
+Thumbs.db
+Desktop.ini

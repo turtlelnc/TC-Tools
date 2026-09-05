@@ -1,0 +1,80 @@
+{
+  "app": "TC-tools",
+  "version": "0.1.0-rc1",
+  "comment": "Offline packages for 'Local install'. Run fetch-packages.ps1 to download all of them. Not installed by default.",
+  "packages": [
+    {
+      "id": "node",
+      "file": "node-v22.23.2-x64.msi",
+      "url": "https://nodejs.org/dist/v22.23.2/node-v22.23.2-x64.msi",
+      "note": "Node.js LTS (Win10 1607+; recommended for Win10 1709)"
+    },
+    {
+      "id": "mingw",
+      "file": "winlibs-x86_64-posix-seh-gcc-13.2.0-mingw-w64ucrt-11.0.1-r8.zip",
+      "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/13.2.0posix-18.1.5-11.0.1-ucrt-r8/winlibs-x86_64-posix-seh-gcc-13.2.0-mingw-w64ucrt-11.0.1-r8.zip",
+      "note": "WinLibs GCC 13.2.0 POSIX-seh UCRT (约 90MB)"
+    },
+    {
+      "id": "git",
+      "file": "Git-2.55.0.5-64-bit.exe",
+      "url": "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/Git-2.55.0.5-64-bit.exe",
+      "note": "Git for Windows 2.55 (Inno Setup, silent: /VERYSILENT /NORESTART /SP- /NOCANCEL)"
+    },
+    {
+      "id": "msys2",
+      "file": "msys2-x86_64-20260611.exe",
+      "url": "https://github.com/msys2/msys2-installer/releases/download/2026-06-11/msys2-x86_64-20260611.exe",
+      "note": "MSYS2 stable (NSIS, silent: /S)"
+    },
+    {
+      "id": "devcpp",
+      "file": "Dev-Cpp 5.11 TDM-GCC 4.9.2 Setup.exe",
+      "url": "https://sourceforge.net/projects/orwelldevcpp/files/Setup%20Releases/Dev-Cpp%205.11%20TDM-GCC%204.9.2%20Setup.exe/download",
+      "note": "Bloodshed DEV-C++ 5.11.0 (NSIS, silent: /S); SourceForge may block some networks - download manually if needed"
+    },
+    {
+      "id": "vscode",
+      "file": "VSCodeUserSetup-x64-latest.exe",
+      "url": "https://update.code.visualstudio.com/latest/win32-x64-user/stable",
+      "note": "VS Code user setup (NSIS, silent: /S, per-user PATH)"
+    },
+    {
+      "id": "python",
+      "file": "python-3.13.15-amd64.exe",
+      "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-amd64.exe",
+      "note": "Python 3.13.15 with IDLE/pip/launcher (silent: /quiet InstallAllUsers=0 PrependPath=1 Include_idle=1 ...)"
+    },
+    {
+      "id": "pycharm",
+      "file": "pycharm-community-latest.exe",
+      "url": "https://data.services.jetbrains.com/products/download?code=PCC&platform=windows&type=release",
+      "note": "PyCharm Community latest (official requires Win10 1809+)"
+    },
+    {
+      "id": "clion",
+      "file": "CLion-latest.exe",
+      "url": "https://data.services.jetbrains.com/products/download?code=CL&platform=windows&type=release",
+      "note": "CLion latest (official requires Win10 1809+)"
+    },
+    {
+      "id": "toolbox",
+      "file": "jetbrains-toolbox-latest.exe",
+      "url": "https://data.services.jetbrains.com/products/download?code=TBA&platform=windows&type=release",
+      "note": "JetBrains Toolbox latest"
+    },
+    {
+      "id": "qt",
+      "file": "qt-unified-windows-x64-online.exe",
+      "url": "https://download.qt.io/official_releases/online_installers/qt-unified-windows-x64-online.exe",
+      "note": "Qt online installer (choose Qt 5.15.x on Win10 1709; Qt 6.x needs 1809+)"
+    }
+  ],
+  "browse_only": [
+    { "name": "WPS", "url": "https://www.wps.cn/" },
+    { "name": "QQ", "url": "https://im.qq.com/" },
+    { "name": "Seewo Whiteboard", "url": "https://easinote.seewo.com/" },
+    { "name": "DingTalk", "url": "https://www.dingtalk.com/" },
+    { "name": "WeChat", "url": "https://pc.weixin.qq.com/" }
+  ]
+}

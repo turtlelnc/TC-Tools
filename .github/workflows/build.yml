@@ -1,0 +1,49 @@
+name: build
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup MSYS2 (MinGW-w64 g++)
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            mingw-w64-x86_64-gcc
+
+      - name: Build tctool.exe (MinGW)
+        shell: msys2 {0}
+        run: |
+          mkdir -p dist
+          g++ -std=c++20 -O2 -static -static-libgcc -static-libstdc++ \
+              -finput-charset=UTF-8 -fexec-charset=UTF-8 \
+              src/main.cpp src/pages.cpp src/tools.cpp src/cli.cpp src/http.cpp \
+              src/json.cpp src/util.cpp src/app.cpp src/lang.cpp \
+              -o dist/tctool.exe -lwinhttp -lshell32 -luser32 -lversion -ladvapi32
+
+      - name: Setup NSIS
+        shell: pwsh
+        run: |
+          choco install nsis -y --no-progress
+
+      - name: Build TCtools-installer
+        shell: pwsh
+        run: |
+          makensis installer/TCtools-installer.nsi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TC-tools-v0.1.0-rc1
+          path: |
+            dist/tctool.exe
+            dist/TCtools-installer-0.1.0-rc1.exe
+          if-no-files-found: error
