@@ -51,6 +51,7 @@ Node.js版介绍：[@turtlelnc/tc-tools](https://www.npmjs.com/package/@turtleln
 请直接下载并使用 `TCtools-installer-0.1.0-rc2.exe` 安装包，具体内容请见 [Our Github Releases](https://github.com/turtlelnc/TC-Tools/releases)。
 
 | 版本号 💾 | 系统 💻 | 点此跳转到对应的 Release 🔗 | 点此下载 ⬇️ |
+|---|---|---|---|
 | v0.1.0-rc2（最新） | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.1.0-rc2](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.1.0-rc2) | [TCtools-installer-0.1.0-rc2.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.1.0-rc2/TCtools-installer-0.1.0-rc2.exe) |
 | v0.1.0-rc1（旧版） | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.1.0-rc1](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.1.0-rc1) | [TCtools-installer-0.1.0-rc1.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.1.0-rc1/TCtools-installer-0.1.0-rc1.exe) |
 
