@@ -1,0 +1,35 @@
+name: publish
+
+# npm Trusted Publishing: 无需任何令牌，GitHub Actions 通过 OIDC 向 npm 换取临时授权。
+# 触发方式: 推送 v* 标签（例如 v0.1.0-rc2 / v1.0.0），或手动触发（workflow_dispatch）。
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  id-token: write      # ← npm Trusted Publishing 必需的 OIDC 权限
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      - name: Publish tc-tools (npm trusted publishing)
+        working-directory: node-app
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          echo "Publishing tc-tools@$VERSION (tag: rc)"
+          npm publish --access public --provenance --tag rc
+          npm dist-tag add "tc-tools@$VERSION" latest
+          npm view tc-tools versions
+          npm view tc-tools dist-tags
