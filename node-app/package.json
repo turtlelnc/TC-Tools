@@ -17,7 +17,8 @@
   "homepage": "https://turtleweb.cc.cd",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turtlelnc/TC-Tools.git"
+    "url": "git+https://github.com/turtlelnc/TC-Tools.git",
+    "directory": "node-app"
   },
   "bugs": {
     "url": "https://github.com/turtlelnc/TC-Tools/issues"

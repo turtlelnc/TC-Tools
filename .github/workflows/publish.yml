@@ -24,6 +24,9 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org
 
+      - name: Update npm to latest (OIDC support)
+        run: npm install -g npm@latest
+
       - name: Publish tc-tools (npm trusted publishing)
         working-directory: node-app
         run: |
