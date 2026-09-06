@@ -33,6 +33,6 @@ jobs:
           VERSION="${GITHUB_REF_NAME#v}"
           echo "Publishing tc-tools@$VERSION (tag: rc)"
           npm publish --access public --provenance --tag rc
-          npm dist-tag add "tc-tools@$VERSION" latest
+          npm dist-tag add "@turtlelnc/tc-tools@$VERSION" latest
           npm view tc-tools versions
           npm view tc-tools dist-tags

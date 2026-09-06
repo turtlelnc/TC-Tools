@@ -4,7 +4,7 @@ TC-tools（全名 **Tclass-Tools**，TC 系列工具之一）的 **Node.js 重�
 （Windows 10 1709+ 工具链安装/检查/内置轻量 CLI、中英双语），可通过 npm 一条命令安装：
 
 ```bat
-npm install -g tc-tools
+npm install -g @turtlelnc/tc-tools
 rem 安装后任意目录直接运行：
 tctool
 ```

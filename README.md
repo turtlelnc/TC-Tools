@@ -35,11 +35,11 @@ TC-tools 是一个**不依赖任何第三方库、纯 Win32 API** 的 C++17/20 �
 可从 npm 一条命令安装：
 
 ```bat
-npm install -g tc-tools
+npm install -g @turtlelnc/tc-tools
 tctool          :: 任意目录直接运行（命令名与 C++ 版一致）
 ```
 
-- 包名：`tc-tools`（bin：`tctool`），仅依赖 Node 内置模块，无第三方依赖
+- 包名：`@turtlelnc/tc-tools`（bin：`tctool`），仅依赖 Node 内置模块，无第三方依赖
 - 详见 [node-app/README.md](node-app/README.md)
 
 ## 系统要求

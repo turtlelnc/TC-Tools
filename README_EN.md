@@ -37,11 +37,11 @@ This repository also ships a **Node.js edition** (`node-app/`, feature-equal to 
 toolchain install/check + built-in lightweight AI CLI, bilingual). Install it with one command:
 
 ```bat
-npm install -g tc-tools
+npm install -g @turtlelnc/tc-tools
 tctool          :: run anywhere (same command name as the C++ edition)
 ```
 
-- Package: `tc-tools` (bin: `tctool`), zero third-party dependencies (Node built-ins only)
+- Package: `@turtlelnc/tc-tools` (bin: `tctool`), zero third-party dependencies (Node built-ins only)
 - Details: [node-app/README.md](node-app/README.md)
 
 ## System requirements

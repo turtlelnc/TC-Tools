@@ -1,5 +1,5 @@
 {
-  "name": "tc-tools",
+  "name": "@turtlelnc/tc-tools",
   "version": "0.1.0-rc2",
   "description": "TC-tools (Tclass-Tools): Windows toolchain installer / checker + lightweight AI CLI (Node.js edition, Windows 10 1709+, bilingual)",
   "keywords": [
