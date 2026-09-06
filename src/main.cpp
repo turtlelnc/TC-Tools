@@ -5,7 +5,7 @@
 
 int main() {
   tcu::init();
-  SetConsoleTitleW(L"TC-tools v0.1.0-rc1");
+  SetConsoleTitleW(L"TC-tools v0.1.0-rc2");
 
   App a;
   a.loadConfig();

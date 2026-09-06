@@ -1,5 +1,5 @@
 // lang.hpp - 语言键枚举 (Language key enum)
-// TC-tools v0.1.0-rc1
+// TC-tools v0.1.0-rc2
 #pragma once
 
 enum Lk : int {

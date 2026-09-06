@@ -16,5 +16,5 @@ if errorlevel 1 (
   exit /b 1
 )
 popd
-echo [OK] ..\dist\TCtools-installer-0.1.0-rc1.exe
+echo [OK] ..\dist\TCtools-installer-0.1.0-rc2.exe
 endlocal

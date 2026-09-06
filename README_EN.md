@@ -3,7 +3,7 @@
 > A C++ console toolkit for **Windows 10 1709+**: toolchain installer · toolchain checker · built-in lightweight AI CLI
 >
 > TC-Tools (full name **Tclass-Tools**, one of the TC series tools)\n>
-> Current version: **v0.1.0-rc1** ｜ Language: Chinese / English (switchable on the home page; Chinese by default)
+> Current version: **v0.1.0-rc2** ｜ Language: Chinese / English (switchable on the home page; Chinese by default)
 
 TC-tools is a console application built with pure Win32 API (**no third-party libraries**), compiled with MinGW-w64 and
 statically linked — a single portable `tctool.exe`. It integrates **detection / installation / troubleshooting** of common
@@ -30,6 +30,19 @@ Every install action will:
 
 > Note: the AI bundle (codex + claude code) requires Windows 10 1803+; on Windows 10 1709 it shows a "cannot install" notice.
 > JetBrains 2023.2+ officially requires Windows 10 1809+; a notice is shown when installing on 1709.
+
+## Node.js edition (npm)
+
+This repository also ships a **Node.js edition** (`node-app/`, feature-equal to the C++ app:
+toolchain install/check + built-in lightweight AI CLI, bilingual). Install it with one command:
+
+```bat
+npm install -g tc-tools
+tctool          :: run anywhere (same command name as the C++ edition)
+```
+
+- Package: `tc-tools` (bin: `tctool`), zero third-party dependencies (Node built-ins only)
+- Details: [node-app/README.md](node-app/README.md)
 
 ## System requirements
 

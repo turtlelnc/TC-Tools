@@ -3,7 +3,7 @@
 > 一个面向 **Windows 10 1709+** 的 C++ 控制台工具箱：工具链安装 · 工具链检查 · 内置轻量 CLI
 >
 > TC-Tools（全名 **Tclass-Tools**，TC 系列工具之一）\n>
-> 当前版本：**v0.1.0-rc1** ｜ 语言：简体中文 / English（首页切换，默认中文）
+> 当前版本：**v0.1.0-rc2** ｜ 语言：简体中文 / English（首页切换，默认中文）
 
 TC-tools 是一个**不依赖任何第三方库、纯 Win32 API** 的 C++17/20 控制台应用（MinGW-w64 编译，静态链接，单文件 exe 即可运行）。
 它把开发者常用工具链的**检测 / 安装 / 排查**集成到一个菜单里，自带了可对话的大模型轻量 CLI，并完全适配 Windows 10 1709（build 16299）。
@@ -28,6 +28,19 @@ TC-tools 是一个**不依赖任何第三方库、纯 Win32 API** 的 C++17/20 �
 
 > 注：AI 套餐（codex + claude code）需要 Windows 10 1803+；在 Windows 10 1709 上会提示无法安装。
 > JetBrains 2023.2 起官方要求 Windows 10 1809+；在 1709 上安装时会给出提示。
+
+## Node.js 版（npm 安装）
+
+本仓库同时提供了一个 **Node.js 版**（`node-app/`，功能与 C++ 版一致：工具链安装/检查/内置轻量 CLI、中英双语），
+可从 npm 一条命令安装：
+
+```bat
+npm install -g tc-tools
+tctool          :: 任意目录直接运行（命令名与 C++ 版一致）
+```
+
+- 包名：`tc-tools`（bin：`tctool`），仅依赖 Node 内置模块，无第三方依赖
+- 详见 [node-app/README.md](node-app/README.md)
 
 ## 系统要求
 

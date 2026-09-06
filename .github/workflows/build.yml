@@ -42,8 +42,8 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: TC-tools-v0.1.0-rc1
+          name: TC-tools-v0.1.0-rc2
           path: |
             dist/tctool.exe
-            dist/TCtools-installer-0.1.0-rc1.exe
+            dist/TCtools-installer-0.1.0-rc2.exe
           if-no-files-found: error

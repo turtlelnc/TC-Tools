@@ -1,7 +1,7 @@
 # create-release.ps1 - 把 dist 下的二进制发布到 GitHub Release
 # 用法:  powershell -ExecutionPolicy Bypass -File .\scripts\create-release.ps1
 # 前置:  安装 GitHub CLI  (winget install --id GitHub.cli) 并完成 gh auth login
-param([string]$Version = "0.1.0-rc1")
+param([string]$Version = "0.1.0-rc2")
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 Set-Location $root

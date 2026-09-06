@@ -1,5 +1,5 @@
 // util.hpp - IO / process / registry / system helpers
-// TC-tools v0.1.0-rc1
+// TC-tools v0.1.0-rc2
 #pragma once
 #include <string>
 #include <vector>

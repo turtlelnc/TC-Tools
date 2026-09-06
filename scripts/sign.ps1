@@ -35,7 +35,7 @@ Write-Host "[i] signtool: $st" -ForegroundColor Gray
 
 $targets = @(
     (Join-Path $root "dist\tctool.exe"),
-    (Join-Path $root "dist\TCtools-installer-0.1.0-rc1.exe")
+    (Join-Path $root "dist\TCtools-installer-0.1.0-rc2.exe")
 )
 foreach ($t in $targets) {
     if (-not (Test-Path $t)) { Write-Host "[!] 缺少产物: $t" -ForegroundColor Yellow; continue }

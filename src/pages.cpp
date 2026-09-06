@@ -25,7 +25,7 @@ static void banner(App& a) {
   println("   | |   | | | | | | |    | '_ \\/ __| ", CLR_CYAN);
   println("   | |   | | | |_| | |___ | | | \\__ \\ ", CLR_CYAN);
   println("   |_|   |_| |____/ \\____||_| |_|___/  ", CLR_CYAN);
-  println("  " + a.f(LK_VERSION, "v0.1.0-rc1") + "  |  Windows 10 1709+", CLR_WHITE);
+  println("  " + a.f(LK_VERSION, "v0.1.0-rc2") + "  |  Windows 10 1709+", CLR_WHITE);
   println("  " + a.f(LK_OS_LINE, a.wv.name.c_str()), CLR_GRAY);
   println("  " + a.f(LK_LANG_LINE, (a.en ? "English" : "简体中文")), CLR_GRAY);
 }

@@ -487,7 +487,7 @@ static void installGit(App& a, bool online) {
   if (online) {
     HttpResp resp; std::string err;
     if (tch::getText("https://api.github.com/repos/git-for-windows/git/releases/latest", resp,
-                     { "User-Agent: TC-tools/0.1.0-rc1" }, &err) && resp.status == 200) {
+                     { "User-Agent: TC-tools/0.1.0-rc2" }, &err) && resp.status == 200) {
       std::string u = ghAsset(resp.body, [](const std::string& n) {
         return n.size() > 12 && startsWith(n, "Git-") && n.find("-64-bit.exe") != std::string::npos;
       });
@@ -512,7 +512,7 @@ static void installMsys2(App& a, bool online) {
   if (online) {
     HttpResp resp; std::string err;
     if (tch::getText("https://api.github.com/repos/msys2/msys2-installer/releases?per_page=10", resp,
-                     { "User-Agent: TC-tools/0.1.0-rc1" }, &err) && resp.status == 200) {
+                     { "User-Agent: TC-tools/0.1.0-rc2" }, &err) && resp.status == 200) {
       Json j;
       if (Json::parse(resp.body, j) && j.t == Json::ARR) {
         for (auto& rel : j.arr) {

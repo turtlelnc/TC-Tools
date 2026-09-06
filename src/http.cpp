@@ -41,7 +41,7 @@ static std::string errText(DWORD e) {
 static HINTERNET g_session = nullptr;
 static HINTERNET sess() {
   if (!g_session) {
-    g_session = WinHttpOpen(L"TC-tools/0.1.0-rc1", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
+    g_session = WinHttpOpen(L"TC-tools/0.1.0-rc2", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
                             WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
     if (g_session) {
       const DWORD proto = WINHTTP_FLAG_SECURE_PROTOCOL_TLS1 | WINHTTP_FLAG_SECURE_PROTOCOL_TLS1_1 |

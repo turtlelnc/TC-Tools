@@ -1,0 +1,11 @@
+TC-tools (Tclass-Tools)
+Copyright 2026 TC-tools / Tclass-Tools Project (DSH)
+
+This product includes software developed by the TC-tools (Tclass-Tools)
+project team (https://turtleweb.cc.cd).
+
+Third-party toolchains referenced by this project (Node.js, Git for Windows,
+MSYS2, MinGW-w64, JetBrains products, Qt, Python, WPS, QQ, WeChat, etc.)
+are the property of their respective owners and are distributed under their
+own licenses; this project only provides an automated download / launch
+entry. See packages/manifest.json for the exact package list.

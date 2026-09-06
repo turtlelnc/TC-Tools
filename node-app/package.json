@@ -1,0 +1,43 @@
+{
+  "name": "tc-tools",
+  "version": "0.1.0-rc2",
+  "description": "TC-tools (Tclass-Tools): Windows toolchain installer / checker + lightweight AI CLI (Node.js edition, Windows 10 1709+, bilingual)",
+  "keywords": [
+    "tc-tools",
+    "toolchain",
+    "installer",
+    "cli",
+    "windows",
+    "smart",
+    "llm",
+    "claude-code"
+  ],
+  "license": "Apache-2.0",
+  "author": "DSH <owen620293@outlook.com>",
+  "homepage": "https://turtleweb.cc.cd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turtlelnc/TC-Tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/turtlelnc/TC-Tools/issues"
+  },
+  "bin": {
+    "tctool": "bin/tctool.js"
+  },
+  "main": "bin/tctool.js",
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "packages/manifest.json",
+    "packages/README.md",
+    "README.md",
+    "NOTICE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

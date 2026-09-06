@@ -1,5 +1,5 @@
 // lang.cpp - 中英文文案表 (zh / en language table)
-// TC-tools v0.1.0-rc1
+// TC-tools v0.1.0-rc2
 #include "lang.hpp"
 
 const LangEntry* langTable() {

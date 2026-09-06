@@ -1,5 +1,5 @@
 ﻿; ==========================================================================
-; TCtools-installer.nsi  -  NSIS installer for TC-tools v0.1.0-rc1
+; TCtools-installer.nsi  -  NSIS installer for TC-tools v0.1.0-rc2
 ; Build:  makensis TCtools-installer.nsi    (or run build-installer.bat)
 ; Requirements: NSIS 3.x (Unicode)  -  https://nsis.sourceforge.io/
 ; ==========================================================================
@@ -8,7 +8,7 @@ Unicode true
 !include "MUI2.nsh"
 !include "LogicLib.nsh"
 
-!define VERSION       "0.1.0-rc1"
+!define VERSION       "0.1.0-rc2"
 !define APPNAME       "TC-tools"
 !define EXENAME       "tctool.exe"
 !define PUBLISHER     "TC-tools Project (Wu Qiaosheng)"
