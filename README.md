@@ -1,5 +1,7 @@
 # TC-tools
 
+中文 | [English](https://github.com/turtlelnc/TC-Tools/blob/main/README_EN.md)
+
 > 一个面向 **Windows 10 1709+** 的 C++ 控制台工具箱：工具链安装 · 工具链检查 · 内置轻量 CLI
 >
 > TC-Tools（全名 **Tclass-Tools**，TC 系列工具之一）\n>
@@ -41,6 +43,16 @@ tctool          :: 任意目录直接运行（命令名与 C++ 版一致）
 
 - 包名：`@turtlelnc/tc-tools`（bin：`tctool`），仅依赖 Node 内置模块，无第三方依赖
 - 详见 [node-app/README.md](node-app/README.md)
+
+Node.js版介绍：[@turtlelnc/tc-tools](https://www.npmjs.com/package/@turtlelnc/tc-tools)
+
+## 适用于 Windows 10 1709+ (x64) 的 C++控制台应用
+
+请直接下载并使用 `TCtools-installer-0.1.0-rc2.exe` 安装包，具体内容请见 [Our Github Releases](https://github.com/turtlelnc/TC-Tools/releases)。
+
+| 版本号 💾 | 系统 💻 | 点此跳转到对应的 Release 🔗 | 点此下载 ⬇️ |
+| v0.1.0-rc2（最新） | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.1.0-rc2](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.1.0-rc2) | [TCtools-installer-0.1.0-rc2.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.1.0-rc2/TCtools-installer-0.1.0-rc2.exe) |
+| v0.1.0-rc1（旧版） | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.1.0-rc1](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.1.0-rc1) | [TCtools-installer-0.1.0-rc1.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.1.0-rc1/TCtools-installer-0.1.0-rc1.exe) |
 
 ## 系统要求
 
