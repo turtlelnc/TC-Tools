@@ -1,5 +1,7 @@
 # TC-tools
 
+English | [中文](https://github.com/turtlelnc/TC-Tools/main/README.md)
+
 > A C++ console toolkit for **Windows 10 1709+**: toolchain installer · toolchain checker · built-in lightweight AI CLI
 >
 > TC-Tools (full name **Tclass-Tools**, one of the TC series tools)\n>
@@ -43,6 +45,17 @@ tctool          :: run anywhere (same command name as the C++ edition)
 
 - Package: `@turtlelnc/tc-tools` (bin: `tctool`), zero third-party dependencies (Node built-ins only)
 - Details: [node-app/README.md](node-app/README.md)
+- 
+Node.js version introduction: [@turtlelnc/tc-tools](https://www.npmjs.com/package/@turtlelnc/tc-tools)
+
+## C++ console app for Windows 10 1709+ (x64)
+
+Please directly download and use the `TCtools-installer-0.1.0-rc2.exe` installation package. For details, please see [Our Github Releases](https://github.com/turtlelnc/TC-Tools/releases).
+
+| Version number 💾 | System 💻 | Click here to jump to the corresponding Release 🔗 | Click here to download ⬇️ |
+|---|---|---|---|
+| v0.1.0-rc2 (latest) | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.1.0-rc2](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.1.0-rc2) | [TCtools-installer-0.1.0-rc2.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.1.0-rc2/TCtools-installer-0.1.0-rc2.exe) |
+| v0.1.0-rc1 (old version) | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.1.0-rc1](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.1.0-rc1) | [TCtools-installer-0.1.0-rc1.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.1.0-rc1/TCtools-installer-0.1.0-rc1.exe) |
 
 ## System requirements
 
