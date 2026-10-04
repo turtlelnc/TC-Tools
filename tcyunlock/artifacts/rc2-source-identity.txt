@@ -1,0 +1,55 @@
+﻿RC2 SOURCE IDENTITY - version-controllable record. KEEP THIS FILE IN GIT.
+
+  artifact        : tctool-unlock 0.2.0-rc2 (wire protocol 1)
+  artifact file   : artifacts\tctool-unlock-0.2.0-rc2-2BC9BB1C.exe
+  artifact size   : 41483515
+  artifact sha256 : 2BC9BB1C78398BD2F09F551E11FC15C9D0712373A6F2A1AF9C9D652DB64FF392
+  source commit   : 17047b4b77f157509af1efb8ba90f51993bbfd8a  (TC-tools repo)
+  status          : contains a known functional defect in input delivery (fixed in rc3);
+                    kept as the frozen hash/provenance record, NOT as a recommended build.
+
+  WHY THIS FILE EXISTS
+    - The published single-file artifact is NOT bit-reproducible (a faithful rebuild from this
+      commit differs; see tcyunlock/README.md 1.4).
+    - BOTH copies of the binary match .gitignore (*.exe): the dist copy and this artifacts copy.
+      So version control protects neither, and a 'git clean -fdx', a disk failure or a machine
+      reset would delete both at once. Two copies on one disk is roughly one copy.
+    - This text file records WHAT existed and WHICH source bytes produced it, so the identity
+      survives even if the binaries are lost. Text files under artifacts/ ARE committable
+      (.gitignore line 54: '!tcyunlock/artifacts/*.txt').
+    - An OFF-MACHINE copy of the binary is still required (planned: release asset).
+
+  METHOD: bytes are read straight from the git object store ('git show <commit>:<path>') and
+          hashed with SHA-256. This bypasses core.autocrlf, so the values are the exact bytes
+          that were on disk when the artifact was built. The git blob id (SHA-1) is given too,
+          for cross-checking against 'git ls-tree -r 17047b4 -- tcyunlock'.
+
+  files in the rc2 tcyunlock/ subtree: 22
+
+  path                                                     bytes  sha256                                                            git-blob(sha1)
+  --------------------------------------------------------------------------------------------------------------------------------------------
+  tcyunlock/build.ps1                                       4529  FD83C0C51589D2368B1017CA60481898A68CC7340F328215FE6FC626BABA6883  ccee8da5c895e4c42977142d0f7d622dc0cf002b
+  tcyunlock/dist/selftest-vectors.json                      3686  F0216B1E5E5CEE3099CE7773CF4BF43F84F3C6468423FA41F2EA1561FF4552B1  75984da4edf0b954022e1616cadf55e3b9ae07b7
+  tcyunlock/publish/tctool-unlock.pdb                      41272  6D5941CF5E3113915D7F2A1103F1D004B3687335C89E60678F2CB55A3EAA6CC5  0bfdc85a2ecdf3602412a1f0d2a17d0c3dc67d94
+  tcyunlock/README.md                                      25978  DEF70D6FA48C58C275EF2E46103BE942A3E1472D00357B7F5B4B636C38BF0538  724c5af61516c39432c3d6566617c48e8fee4f5b
+  tcyunlock/spike/ApiDump.cs                                6846  431185EB9D2FEC5EA96E293BEE94FCDFA6EAED95A05C061F5802C3EC79C866D9  1df727c8b89b76e69464dc90d457bf381ec18abc
+  tcyunlock/spike/LoopbackProbe.cs                          7105  9E40EF7BE74F1C954D589D84D9D358BACFD2B10853232482896CECD606C20535  59cc2d2291e23b860de9207926742ef99ca7c0cf
+  tcyunlock/spike/Program.cs                               10374  2E3CDB9F394A125E4B89941334FA554C7FE90D1B15B38DF03EE027E90DA638EC  0ef011ee8b8d9a9a0d7802b9b631754e8fe63972
+  tcyunlock/spike/RadioProbe.cs                             7253  EB404337C7CF5C3C2A28BE90BAB9512268FACC909D2C988462EAC743CBE08C5F  c21cf4048f6552ce6634f7dd28d77cbe312d276d
+  tcyunlock/spike/spike.csproj                               545  81C5517F0688DF2D33CF8016FE0A1B919560855F3FA7F086D585307BB4F78475  c43cba5a493838962f8723ca3e3e7317234169c7
+  tcyunlock/src/Autostart.cs                               24117  97F176CF02F6DF5BCF23847BD435E6AD7E4E5EE0BB003CCB967AD9B1B3FDB2B9  f83944592dfbc5c918ee9a7c30940fb06271c8c3
+  tcyunlock/src/Ble/GattUnlockServer.cs                    30772  BDB44D94B98F28F2994C242063FF321A5D3874E0051E7B1539248B17B596135A  98bdda290897e621480474898c236c138d6c47c6
+  tcyunlock/src/HostStore.cs                               11463  E13AE56C95400B6B6D270D5782B888A84A71D73FBB8F45EEA95B9F0602A9208D  1a047e78936cb4aea4283590f9c03dd38467a044
+  tcyunlock/src/Program.cs                                 67274  B26E8D7E63AB97C788F9EABADDB4A3A803A76CA6DABFDC1E4C8BC51E0D3BFCEC  ca56295dd3a62c03008200da5cbe14f52824184d
+  tcyunlock/src/Protocol.cs                                11239  6BB28B4899E00F7AB50786B3CCE41F7B597C63F983ECA4F1EFCAF7423620F1FE  93e9d2da1f6f717b6ee65f5e1e8a114672440f8a
+  tcyunlock/src/Qr/QrCode.cs                               23667  F77EC62892876353F8CB582428E88CA3E025726599E725877F19CA5C8FBD0ACC  9c5443e2253b17add08f8bfa6506c01861de8fda
+  tcyunlock/src/UnlockPolicy.cs                             2286  5C9A53F4149B11C19C43DAB8EA3D936B0E5982EBB648C3AC79808081FE914E70  c842b937387f292fc0c83f61bc470796d8cf2488
+  tcyunlock/src/Win/InputInjector.cs                        6116  5950A56AEA1EB2ADDE626A9D912BE5A1920A935C698D6ABDCACA69D923D38092  68e5733f96aa9bb1bed696c3fcfd4646083dab89
+  tcyunlock/src/Win/Native.cs                               5658  5299FAA406B4E3227FDDB569EB15922C1D886EF1E138CA018655BDF7132BC14A  e84996b9e95723ef236f74a3bcee3579f9f218c6
+  tcyunlock/tctool-unlock.csproj                            1762  D86828F0C4F43728AFF71F610A93463F5DFA00584E08B73EBE705F869EB843F8  84e23f219ed26f6893e6eebdda07e3359587c81b
+  tcyunlock/tools/debug-qr-diff.py                          2039  ED93C143AC455B5E14F5E0E0FE901C3B00EB82CFD79991CE3B4753756C7044D5  997c09d6c37d8a1657a2228a4c2b6768565ad97a
+  tcyunlock/tools/qr-extract.py                             5025  141917C1A226B9A9D1D7E6FE4BF1AC8DF58BDA6CEB39872107828491130D39B9  1accca7fd87ff3c76ac0c1b184a4f6d8b37c7fff
+  tcyunlock/tools/verify-qr.py                              8074  3ABC63BD3FCA1DCCEAD209D4549EC9602EAAC951CA58A81D43DFAC36C9EB74AB  c1382904d2e4546709ab8f802bcec0f8645fdb5d
+
+  NOT DUPLICATED HERE: docs/, installer/, android/, node-app/, src/ (C++), tests/ live outside
+  tcyunlock/ and are owned by others; their rc2 state is whatever commit 17047b4 holds.
