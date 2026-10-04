@@ -2,8 +2,7 @@
 
 中文 | [English](https://github.com/turtlelnc/TC-Tools/blob/main/README_EN.md)
 
-> 一个面向 **Windows 10 1709+** 的 C++ 控制台工具箱：工具链安装 · 工具链检查 · 内置轻量 CLI
->
+> 一个面向 **Windows 10 1709+** 的 C++ 控制台工具箱：工具链安装 · 工具链检查 · 内置轻量 CLI  
 > TC-Tools（全名 **Tclass-Tools**，TC 系列工具之一）  
 > 当前版本：**v0.2.0-rc2** ｜ 语言：简体中文 / English（首页切换，默认中文）
 
