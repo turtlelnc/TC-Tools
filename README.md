@@ -2,9 +2,8 @@
 
 中文 | [English](https://github.com/turtlelnc/TC-Tools/blob/main/README_EN.md)
 
-> 一个面向 **Windows 10 1709+** 的 C++ 控制台工具箱：工具链安装 · 工具链检查 · 内置轻量 CLI
->
-> TC-Tools（全名 **Tclass-Tools**，TC 系列工具之一）\n>
+> 一个面向 **Windows 10 1709+** 的 C++ 控制台工具箱：工具链安装 · 工具链检查 · 内置轻量 CLI  
+> TC-Tools（全名 **Tclass-Tools**，TC 系列工具之一）  
 > 当前版本：**v0.2.0-rc2** ｜ 语言：简体中文 / English（首页切换，默认中文）
 
 TC-tools 是一个**不依赖任何第三方库、纯 Win32 API** 的 C++17/20 控制台应用（MinGW-w64 编译，静态链接，单文件 exe 即可运行）。
@@ -84,13 +83,14 @@ Windows 的 **UAC 安全桌面 / 锁屏登录界面**不接受普通用户进程
 [docs/UNLOCK-PROTOCOL.md](docs/UNLOCK-PROTOCOL.md)；两端一致性与独立校验结果见
 [docs/UNLOCK-VERIFY.md](docs/UNLOCK-VERIFY.md)。
 
-## 适用于 Windows 10 1709+ (x64) 的 C++控制台应用
+## 适用于 Windows 10 1709+ (x64) 的 C++控制台应用 和 新版 (v0.2.0-rc2) 的手机端验证软件
 
 请直接下载并使用 `TCtools-installer-0.2.0-rc2.exe` 安装包，具体内容请见 [Our Github Releases](https://github.com/turtlelnc/TC-Tools/releases)。
 
 | 版本号 💾 | 系统 💻 | 点此跳转到对应的 Release 🔗 | 点此下载 ⬇️ |
 |---|---|---|---|
 | v0.2.0-rc2（最新） | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.2.0-rc2](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.2.0-rc2) | [TCtools-installer-0.2.0-rc2.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.2.0-rc2/TCtools-installer-0.2.0-rc2.exe) |
+| v0.2.0-rc2 手机端验证程序 (apk)（最新） | android 8+ | [TC-tools v0.2.0-rc2](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.2.0-rc2) | [TC-Tools-Unlock-0.2.0-rc2.apk](https://github.com/turtlelnc/TC-Tools/releases/download/v0.2.0-rc2/TC-Tools-Unlock-0.2.0-rc2.apk) |
 | v0.1.0-rc2（旧版） | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.1.0-rc2](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.1.0-rc2) | [TCtools-installer-0.1.0-rc2.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.1.0-rc2/TCtools-installer-0.1.0-rc2.exe) |
 | v0.1.0-rc1（旧版） | Windows 10 1709+ x64 / Windows 11 x64 | [TC-tools v0.1.0-rc1](https://github.com/turtlelnc/TC-Tools/releases/tag/v0.1.0-rc1) | [TCtools-installer-0.1.0-rc1.exe](https://github.com/turtlelnc/TC-Tools/releases/download/v0.1.0-rc1/TCtools-installer-0.1.0-rc1.exe) |
 
