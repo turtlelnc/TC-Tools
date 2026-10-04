@@ -4,15 +4,29 @@
 > 因为这类自包含单文件产物**无法从源码位级重建**（见 `docs/BUILD-MANIFEST-v0.2.0-rc2.md`），
 > 没有哈希就无法追溯"用户当时测的到底是哪一版"。
 
-## 当前磁盘上的三份副本（各自身份不同，不要混淆）
+## 当前磁盘上的所有构建输出（**每个都必须能说出自己是谁**）
 
-| # | 位置 | 大小 | SHA-256 | selftest | 状态 |
-|---|---|---|---|---|---|
-| 1 | `tcyunlock\dist\tctool-unlock.exe` | 41,483,515 B | `2BC9BB1C78398BD2F09F551E11FC15C9D0712373A6F2A1AF9C9D652DB64FF392` | 29/29 | **rc2 冻结产物**；含**已知输入投递缺陷**（见下）；不得作为"解锁可用"版本发布 |
-| 2 | `tcyunlock\publish-rc3-check\tctool-unlock.exe` | 41,519,541 B | `0962A85146BEA216F6B60D336F9B970787DCC69D3B77E6CBE488D593E51FC83B` | 41/41 | **rc3 候选**（未验收、未发布；会随迭代变化） |
-| 3 | `C:\tctoolchain\bin\tctool-unlock.exe`（仓库外） | 41,519,541 B | `0962A85146BEA216F6B60D336F9B970787DCC69D3B77E6CBE488D593E51FC83B` | 41/41 | **交给用户做锁屏实测的移交件**（与 #2 逐字节相同） |
+`publish\` 与 `publish-rc3-check\` 都是**发布路径**。历史上曾出现"未记录的产物混在发布路径里"的情况
+（`tcyunlock\publish\tctool-unlock.exe` = `E1AD5EE6…` / 15:09:45，是更早的候选，
+既不在本清单也不在 BUILD-MANIFEST 里）—— **已于 16:0x 删除**，删除原因记录在此以免再次发生。
 
-## 已移交用于锁屏实测的版本（**结论将绑定此版本**）
+| 位置 | 大小 | SHA-256（前 16） | 状态 |
+|---|---|---|---|
+| `tcyunlock\dist\tctool-unlock.exe` | 41,483,515 B | `2BC9BB1C78398BD2` | **rc2 冻结产物**；含已知输入投递缺陷 |
+| `tcyunlock\publish\tctool-unlock.exe` | ~~41,484,008 B~~ | ~~`E1AD5EE6505460CF`~~ | **已删除**（15:09:45 的过时候选，未记录、会误导） |
+| `tcyunlock\publish-rc3-check\tctool-unlock.exe` | 41,519,541 B | `0962A85146BEA216` | **rc3 候选**（41/41） |
+| `tcyunlock\bin\...\win-x64\tctool-unlock.exe` | 9,644,032 B | `D02A74DB4660AFB5` | 非单文件发布中间产物（不上线） |
+| `tcyunlock\bin\...\net8.0-windows10.0.19041.0\tctool-unlock.exe` | 152,064 B | `151787881CF07F14` | 框架依赖构建（需 .NET 运行时，不上线） |
+| `C:\tctoolchain\bin\tctool-unlock.exe`（仓库外） | 41,519,541 B | `0962A85146BEA216` | **交给用户实测的移交件**（与 rc3 候选逐字节相同） |
+
+> **规则**：只允许存在**一个**"当前候选"。旧候选应删除并在此留一行记录（哈希 + 删除原因），
+> 否则"发布路径里躺着两份不同版本"迟早会被打成安装包。
+>
+> 删除 `publish\tctool-unlock.exe` 后，该目录只剩 `tctool-unlock.pdb`（48 KB 调试符号，无 exe）。
+> 符号文件是**已跟踪的历史文件**，本次未删除；它本身不含证书或密钥，但请注意：
+> **单独一个 pdb 不代表有任何可运行产物**。
+
+## 交付产物哈希
 
 ```
 移交时间 : 2026-10-04 16:06:34（构建时间）
